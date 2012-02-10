@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		D710273813092BE100136C75 /* GoogleJapaneseInputClient.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D7102730130929CE00136C75 /* GoogleJapaneseInputClient.dylib */; };
+		D710273D13092C7900136C75 /* GoogleJapaneseInputClient.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = D7102730130929CE00136C75 /* GoogleJapaneseInputClient.dylib */; };
+		D710274913092E3C00136C75 /* ClientProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = D710274713092E3C00136C75 /* ClientProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D710274A13092E3C00136C75 /* ClientProxy.mm in Sources */ = {isa = PBXBuildFile; fileRef = D710274813092E3C00136C75 /* ClientProxy.mm */; };
+		D710296E130958FA00136C75 /* MyMachPortManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D710296C130958FA00136C75 /* MyMachPortManager.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		D710296F130958FA00136C75 /* MyMachPortManager.cc in Sources */ = {isa = PBXBuildFile; fileRef = D710296D130958FA00136C75 /* MyMachPortManager.cc */; };
+		D72F09B312995D4C005DAA5B /* MainController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D72F09B212995D4C005DAA5B /* MainController.mm */; };
+		D78F47A01309735B00684CDA /* MyIPCClientFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = D78F479E1309735B00684CDA /* MyIPCClientFactory.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		D78F47A11309735B00684CDA /* MyIPCClientFactory.cc in Sources */ = {isa = PBXBuildFile; fileRef = D78F479F1309735B00684CDA /* MyIPCClientFactory.cc */; };
+		D78F4B19130AD90100684CDA /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D78F49D8130AD8E500684CDA /* Carbon.framework */; };
+		D78F4F23130ADE3E00684CDA /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D78F4BEC130ADA8000684CDA /* AppKit.framework */; };
+		D7D1EF8912E820AC004DCDFC /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = D7D1EF8812E820AC004DCDFC /* AppDelegate.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D710273E13092C8900136C75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D710272F130929CE00136C75;
+			remoteInfo = GoogleJapaneseInputClient;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D72F09C512995F3F005DAA5B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D710273D13092C7900136C75 /* GoogleJapaneseInputClient.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* IncogSwitcher_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IncogSwitcher_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* IncogSwitcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IncogSwitcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D71027281309299C00136C75 /* GoogleJapaneseInputClient-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleJapaneseInputClient-Info.plist"; sourceTree = "<group>"; };
+		D7102730130929CE00136C75 /* GoogleJapaneseInputClient.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = GoogleJapaneseInputClient.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		D710274713092E3C00136C75 /* ClientProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientProxy.h; sourceTree = "<group>"; };
+		D710274813092E3C00136C75 /* ClientProxy.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ClientProxy.mm; sourceTree = "<group>"; };
+		D710296C130958FA00136C75 /* MyMachPortManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMachPortManager.h; sourceTree = "<group>"; };
+		D710296D130958FA00136C75 /* MyMachPortManager.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MyMachPortManager.cc; sourceTree = "<group>"; };
+		D72F09B112995D4C005DAA5B /* MainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainController.h; sourceTree = "<group>"; };
+		D72F09B212995D4C005DAA5B /* MainController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MainController.mm; sourceTree = "<group>"; };
+		D78F479E1309735B00684CDA /* MyIPCClientFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyIPCClientFactory.h; sourceTree = "<group>"; };
+		D78F479F1309735B00684CDA /* MyIPCClientFactory.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MyIPCClientFactory.cc; sourceTree = "<group>"; };
+		D78F49D8130AD8E500684CDA /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		D78F4BEC130ADA8000684CDA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		D7D1EF8712E820AC004DCDFC /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D7D1EF8812E820AC004DCDFC /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				D710273813092BE100136C75 /* GoogleJapaneseInputClient.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D710272E130929CE00136C75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D78F4F23130ADE3E00684CDA /* AppKit.framework in Frameworks */,
+				D78F4B19130AD90100684CDA /* Carbon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* AppClasses */ = {
+			isa = PBXGroup;
+			children = (
+				D72F09B112995D4C005DAA5B /* MainController.h */,
+				D72F09B212995D4C005DAA5B /* MainController.mm */,
+				D7D1EF8712E820AC004DCDFC /* AppDelegate.h */,
+				D7D1EF8812E820AC004DCDFC /* AppDelegate.mm */,
+			);
+			path = AppClasses;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* IncogSwitcher.app */,
+				D7102730130929CE00136C75 /* GoogleJapaneseInputClient.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* IncogSwitcher */ = {
+			isa = PBXGroup;
+			children = (
+				D710274613092DFE00136C75 /* LibClasses */,
+				080E96DDFE201D6D7F000001 /* AppClasses */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = IncogSwitcher;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* IncogSwitcher_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D71027281309299C00136C75 /* GoogleJapaneseInputClient-Info.plist */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				D78F49D8130AD8E500684CDA /* Carbon.framework */,
+				D78F4BEC130ADA8000684CDA /* AppKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D710274613092DFE00136C75 /* LibClasses */ = {
+			isa = PBXGroup;
+			children = (
+				D710274713092E3C00136C75 /* ClientProxy.h */,
+				D710274813092E3C00136C75 /* ClientProxy.mm */,
+				D710296C130958FA00136C75 /* MyMachPortManager.h */,
+				D710296D130958FA00136C75 /* MyMachPortManager.cc */,
+				D78F479E1309735B00684CDA /* MyIPCClientFactory.h */,
+				D78F479F1309735B00684CDA /* MyIPCClientFactory.cc */,
+			);
+			path = LibClasses;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D710272C130929CE00136C75 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D710274913092E3C00136C75 /* ClientProxy.h in Headers */,
+				D710296E130958FA00136C75 /* MyMachPortManager.h in Headers */,
+				D78F47A01309735B00684CDA /* MyIPCClientFactory.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* IncogSwitcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "IncogSwitcher" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				D72F09C512995F3F005DAA5B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D710273F13092C8900136C75 /* PBXTargetDependency */,
+			);
+			name = IncogSwitcher;
+			productInstallPath = "$(HOME)/Applications";
+			productName = IncogSwitcher;
+			productReference = 8D1107320486CEB800E47090 /* IncogSwitcher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D710272F130929CE00136C75 /* GoogleJapaneseInputClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7102733130929EC00136C75 /* Build configuration list for PBXNativeTarget "GoogleJapaneseInputClient" */;
+			buildPhases = (
+				D710272C130929CE00136C75 /* Headers */,
+				D710272D130929CE00136C75 /* Sources */,
+				D710272E130929CE00136C75 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoogleJapaneseInputClient;
+			productName = GoogleJapaneseInputClient;
+			productReference = D7102730130929CE00136C75 /* GoogleJapaneseInputClient.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "IncogSwitcher" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* IncogSwitcher */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* IncogSwitcher */,
+				D710272F130929CE00136C75 /* GoogleJapaneseInputClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				D72F09B312995D4C005DAA5B /* MainController.mm in Sources */,
+				D7D1EF8912E820AC004DCDFC /* AppDelegate.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D710272D130929CE00136C75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D710274A13092E3C00136C75 /* ClientProxy.mm in Sources */,
+				D710296F130958FA00136C75 /* MyMachPortManager.cc in Sources */,
+				D78F47A11309735B00684CDA /* MyIPCClientFactory.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D710273F13092C8900136C75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D710272F130929CE00136C75 /* GoogleJapaneseInputClient */;
+			targetProxy = D710273E13092C8900136C75 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1DDD58140DA1D0A300B32029 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DDD58150DA1D0A300B32029 /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = IncogSwitcher_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				PRODUCT_NAME = IncogSwitcher;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = IncogSwitcher_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				PRODUCT_NAME = IncogSwitcher;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				PREBINDING = NO;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "";
+				VALID_ARCHS = "x86_64 i386";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				PREBINDING = NO;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "";
+				VALID_ARCHS = "x86_64 i386";
+			};
+			name = Release;
+		};
+		D7102731130929CE00136C75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = OS_MACOSX;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${MOZC_LIBDIR}\"",
+				);
+				MOZC_LIB = "-lbase -lipc -lprotobuf -lsession_protocol -lclient";
+				MOZC_LIBDIR = "${MOZC_ROOT}/out_mac/${CONFIGURATION}";
+				MOZC_ROOT = /Users/kento/Documents/dev/mozc_x64lib/src;
+				OTHER_LDFLAGS = "${MOZC_LIB}";
+				PREBINDING = NO;
+				PRODUCT_NAME = GoogleJapaneseInputClient;
+				USER_HEADER_SEARCH_PATHS = "\"$MOZC_ROOT\" \"${MOZC_ROOT}/out_mac/DerivedSources/${CONFIGURATION}\" \"${MOZC_ROOT}/out_mac/DerivedSources/${CONFIGURATION}/proto_out\" \"${MOZC_ROOT}/third_party/breakpad/src\" \"${MOZC_ROOT}/third_party/gtest\" \"${MOZC_ROOT}/third_party/gtest/include\" \"${MOZC_ROOT}/protobuf/files/src\"";
+			};
+			name = Debug;
+		};
+		D7102732130929CE00136C75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = OS_MACOSX;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${MOZC_LIBDIR}\"",
+				);
+				MOZC_LIB = "-lbase -lipc -lprotobuf -lsession_protocol -lclient";
+				MOZC_LIBDIR = "${MOZC_ROOT}/out_mac/${CONFIGURATION}";
+				MOZC_ROOT = /Users/kento/Documents/dev/mozc_x64lib/src;
+				OTHER_LDFLAGS = "${MOZC_LIB}";
+				PREBINDING = NO;
+				PRODUCT_NAME = GoogleJapaneseInputClient;
+				USER_HEADER_SEARCH_PATHS = "\"$MOZC_ROOT\" \"${MOZC_ROOT}/out_mac/DerivedSources/${CONFIGURATION}\" \"${MOZC_ROOT}/out_mac/DerivedSources/${CONFIGURATION}/proto_out\" \"${MOZC_ROOT}/third_party/breakpad/src\" \"${MOZC_ROOT}/third_party/gtest\" \"${MOZC_ROOT}/third_party/gtest/include\" \"${MOZC_ROOT}/protobuf/files/src\"";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "IncogSwitcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "IncogSwitcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7102733130929EC00136C75 /* Build configuration list for PBXNativeTarget "GoogleJapaneseInputClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7102731130929CE00136C75 /* Debug */,
+				D7102732130929CE00136C75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
