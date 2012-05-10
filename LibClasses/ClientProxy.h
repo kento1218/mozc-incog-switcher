@@ -10,12 +10,12 @@
 
 namespace mozc {
 	namespace client {
-		class Session;
+		class Client;
 	}
 }
 
 @interface ClientProxy : NSObject {
-	mozc::client::Session *session;
+	mozc::client::Client *session;
 }
 
 - (BOOL)isIncognitoMode;

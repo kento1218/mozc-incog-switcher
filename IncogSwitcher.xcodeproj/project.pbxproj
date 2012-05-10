@@ -18,6 +18,7 @@
 		D710296E130958FA00136C75 /* MyMachPortManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D710296C130958FA00136C75 /* MyMachPortManager.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		D710296F130958FA00136C75 /* MyMachPortManager.cc in Sources */ = {isa = PBXBuildFile; fileRef = D710296D130958FA00136C75 /* MyMachPortManager.cc */; };
 		D72F09B312995D4C005DAA5B /* MainController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D72F09B212995D4C005DAA5B /* MainController.mm */; };
+		D77D6BAD14E54B0A008A3D46 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D77D6BAB14E54AF6008A3D46 /* IOKit.framework */; };
 		D78F47A01309735B00684CDA /* MyIPCClientFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = D78F479E1309735B00684CDA /* MyIPCClientFactory.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		D78F47A11309735B00684CDA /* MyIPCClientFactory.cc in Sources */ = {isa = PBXBuildFile; fileRef = D78F479F1309735B00684CDA /* MyIPCClientFactory.cc */; };
 		D78F4B19130AD90100684CDA /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D78F49D8130AD8E500684CDA /* Carbon.framework */; };
@@ -64,6 +65,7 @@
 		D710296D130958FA00136C75 /* MyMachPortManager.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MyMachPortManager.cc; sourceTree = "<group>"; };
 		D72F09B112995D4C005DAA5B /* MainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainController.h; sourceTree = "<group>"; };
 		D72F09B212995D4C005DAA5B /* MainController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MainController.mm; sourceTree = "<group>"; };
+		D77D6BAB14E54AF6008A3D46 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		D78F479E1309735B00684CDA /* MyIPCClientFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyIPCClientFactory.h; sourceTree = "<group>"; };
 		D78F479F1309735B00684CDA /* MyIPCClientFactory.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MyIPCClientFactory.cc; sourceTree = "<group>"; };
 		D78F49D8130AD8E500684CDA /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
@@ -88,6 +90,7 @@
 			files = (
 				D78F4F23130ADE3E00684CDA /* AppKit.framework in Frameworks */,
 				D78F4B19130AD90100684CDA /* Carbon.framework in Frameworks */,
+				D77D6BAD14E54B0A008A3D46 /* IOKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +153,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D77D6BAB14E54AF6008A3D46 /* IOKit.framework */,
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
 				D78F49D8130AD8E500684CDA /* Carbon.framework */,
 				D78F4BEC130ADA8000684CDA /* AppKit.framework */,
@@ -360,7 +364,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				PREBINDING = NO;
 				SDKROOT = macosx;
@@ -378,7 +382,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				PREBINDING = NO;
 				SDKROOT = macosx;
@@ -407,7 +411,7 @@
 					"$(inherited)",
 					"\"${MOZC_LIBDIR}\"",
 				);
-				MOZC_LIB = "-lbase -lipc -lprotobuf -lsession_protocol -lclient";
+				MOZC_LIB = "-lbase_core -lbase -lipc -lprotobuf -lipc_protocol -lconfig_protocol -lsession_protocol -lclient";
 				MOZC_LIBDIR = "${MOZC_ROOT}/out_mac/${CONFIGURATION}";
 				MOZC_ROOT = /Users/kento/Documents/dev/mozc_x64lib/src;
 				OTHER_LDFLAGS = "${MOZC_LIB}";
@@ -436,7 +440,7 @@
 					"$(inherited)",
 					"\"${MOZC_LIBDIR}\"",
 				);
-				MOZC_LIB = "-lbase -lipc -lprotobuf -lsession_protocol -lclient";
+				MOZC_LIB = "-lbase_core -lbase -lipc -lprotobuf -lipc_protocol -lconfig_protocol -lsession_protocol -lclient";
 				MOZC_LIBDIR = "${MOZC_ROOT}/out_mac/${CONFIGURATION}";
 				MOZC_ROOT = /Users/kento/Documents/dev/mozc_x64lib/src;
 				OTHER_LDFLAGS = "${MOZC_LIB}";

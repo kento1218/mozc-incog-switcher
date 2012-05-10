@@ -14,23 +14,14 @@
 #include "base/mac_util.h"
 #include "base/singleton.h"
 #include "base/util.h"
-#include "client/session.h"
-#include "session/config.pb.h"
+#include "client/client.h"
+#include "config/config.pb.h"
 
 using mozc::MacUtil;
 using mozc::Singleton;
 using mozc::Util;
 using mozc::config::Config;
-using mozc::client::Session;
-
-/*
- Define _environ explicitly
- Workaround to avoid symbol missing
- */
-#ifndef environ
-#include <crt_externs.h>
-char **environ = *_NSGetEnviron();
-#endif
+using mozc::client::Client;
 
 namespace {
 	void InitEnvironment() {
@@ -52,7 +43,7 @@ namespace {
 	
 	// Init client to connect GoogleJapaneseInput
 	InitEnvironment();
-	session = new Session();
+	session = new Client();
 	session->SetIPCClientFactory(Singleton<MyIPCClientFactory>::get());
 	
 	return self;
