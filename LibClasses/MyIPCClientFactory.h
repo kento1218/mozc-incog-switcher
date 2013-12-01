@@ -9,6 +9,7 @@
 #define __MYIPCCLIENTFACTORY_H_
 
 #include <string>
+#include "base/namespace.h"
 #include "ipc/ipc.h"
 
 /*

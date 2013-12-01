@@ -11,15 +11,18 @@
 #import "MyMachPortManager.h"
 
 #include "base/base.h"
+#include "base/logging.h"
 #include "base/mac_util.h"
 #include "base/singleton.h"
-#include "base/util.h"
+#include "base/system_util.h"
+#include "base/file_util.h"
 #include "client/client.h"
 #include "config/config.pb.h"
 
 using mozc::MacUtil;
 using mozc::Singleton;
-using mozc::Util;
+using mozc::FileUtil;
+using mozc::SystemUtil;
 using mozc::config::Config;
 using mozc::client::Client;
 
@@ -27,9 +30,9 @@ namespace {
 	void InitEnvironment() {
 		string gimeProfDir;
 		gimeProfDir = MacUtil::GetApplicationSupportDirectory();
-		gimeProfDir = Util::JoinPath(gimeProfDir, "Google");
-		gimeProfDir = Util::JoinPath(gimeProfDir, "JapaneseInput");
-		Util::SetUserProfileDirectory(gimeProfDir);
+		gimeProfDir = FileUtil::JoinPath(gimeProfDir, "Google");
+		gimeProfDir = FileUtil::JoinPath(gimeProfDir, "JapaneseInput");
+		SystemUtil::SetUserProfileDirectory(gimeProfDir);
 		
 		MyMachPortManager *manager = Singleton<MyMachPortManager>::get();
 		manager->SetPortName("com.google.inputmethod.Japanese.Converter.session");

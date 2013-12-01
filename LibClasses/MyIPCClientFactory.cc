@@ -10,6 +10,7 @@
 #include "MyMachPortManager.h"
 
 #include "base/base.h"
+#include "base/logging.h"
 #include "base/singleton.h"
 #include "ipc/ipc.h"
 

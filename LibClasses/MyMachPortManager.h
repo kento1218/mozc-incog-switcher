@@ -10,6 +10,7 @@
 #define __MYMACHPORTMANAGER_H_
 
 #include <string>
+#include "base/namespace.h"
 #include "ipc/ipc.h"
 
 class MyMachPortManager : public mozc::MachPortManagerInterface {

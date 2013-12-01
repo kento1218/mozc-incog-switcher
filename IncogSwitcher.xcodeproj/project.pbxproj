@@ -411,13 +411,13 @@
 					"$(inherited)",
 					"\"${MOZC_LIBDIR}\"",
 				);
-				MOZC_LIB = "-lbase_core -lbase -lipc -lprotobuf -lipc_protocol -lconfig_protocol -lsession_protocol -lclient";
+				MOZC_LIB = "-lbase_core -lbase -lipc -lprotobuf -lipc_protocol -lconfig_protocol -ldictionary_protocol -lsession_protocol -lclient";
 				MOZC_LIBDIR = "${MOZC_ROOT}/out_mac/${CONFIGURATION}";
-				MOZC_ROOT = /Users/kento/Documents/dev/mozc_x64lib/src;
+				MOZC_ROOT = /Users/kento/Documents/dev/mozc3/src;
 				OTHER_LDFLAGS = "${MOZC_LIB}";
 				PREBINDING = NO;
 				PRODUCT_NAME = GoogleJapaneseInputClient;
-				USER_HEADER_SEARCH_PATHS = "\"$MOZC_ROOT\" \"${MOZC_ROOT}/out_mac/DerivedSources/${CONFIGURATION}\" \"${MOZC_ROOT}/out_mac/DerivedSources/${CONFIGURATION}/proto_out\" \"${MOZC_ROOT}/third_party/breakpad/src\" \"${MOZC_ROOT}/third_party/gtest\" \"${MOZC_ROOT}/third_party/gtest/include\" \"${MOZC_ROOT}/protobuf/files/src\"";
+				USER_HEADER_SEARCH_PATHS = "\"$MOZC_ROOT\" \"${MOZC_ROOT}/out_mac/DerivedSources/${CONFIGURATION}\" \"${MOZC_ROOT}/out_mac/DerivedSources/${CONFIGURATION}/proto_out\" \"${MOZC_ROOT}/third_party/breakpad/src\" \"${MOZC_ROOT}/third_party/gtest\" \"${MOZC_ROOT}/third_party/gtest/include\" \"${MOZC_ROOT}/third_party/protobuf/src\"";
 			};
 			name = Debug;
 		};
@@ -440,13 +440,13 @@
 					"$(inherited)",
 					"\"${MOZC_LIBDIR}\"",
 				);
-				MOZC_LIB = "-lbase_core -lbase -lipc -lprotobuf -lipc_protocol -lconfig_protocol -lsession_protocol -lclient";
+				MOZC_LIB = "-lbase_core -lbase -lipc -lprotobuf -lipc_protocol -lconfig_protocol -ldictionary_protocol -lsession_protocol -lclient";
 				MOZC_LIBDIR = "${MOZC_ROOT}/out_mac/${CONFIGURATION}";
-				MOZC_ROOT = /Users/kento/Documents/dev/mozc_x64lib/src;
+				MOZC_ROOT = /Users/kento/Documents/dev/mozc3/src;
 				OTHER_LDFLAGS = "${MOZC_LIB}";
 				PREBINDING = NO;
 				PRODUCT_NAME = GoogleJapaneseInputClient;
-				USER_HEADER_SEARCH_PATHS = "\"$MOZC_ROOT\" \"${MOZC_ROOT}/out_mac/DerivedSources/${CONFIGURATION}\" \"${MOZC_ROOT}/out_mac/DerivedSources/${CONFIGURATION}/proto_out\" \"${MOZC_ROOT}/third_party/breakpad/src\" \"${MOZC_ROOT}/third_party/gtest\" \"${MOZC_ROOT}/third_party/gtest/include\" \"${MOZC_ROOT}/protobuf/files/src\"";
+				USER_HEADER_SEARCH_PATHS = "\"$MOZC_ROOT\" \"${MOZC_ROOT}/out_mac/DerivedSources/${CONFIGURATION}\" \"${MOZC_ROOT}/out_mac/DerivedSources/${CONFIGURATION}/proto_out\" \"${MOZC_ROOT}/third_party/breakpad/src\" \"${MOZC_ROOT}/third_party/gtest\" \"${MOZC_ROOT}/third_party/gtest/include\" \"${MOZC_ROOT}/third_party/protobuf/src\"";
 				ZERO_LINK = NO;
 			};
 			name = Release;
